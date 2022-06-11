@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/images/bg-intro-desktop.png);
+    background-color: #FF7978;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: white;
+}
+
+.card {
+
+}
+
+.top-card {
+    background: hsl(248, 32%, 49%);
+    border-radius: 8px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.top-card p {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.top-card span {
+    color: hsl(246, 25%, 77%);
+}
+
+.main-card {
+    background: white;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 7px;
+}
+
+
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+div.input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    transition: .4s;
+    color: hsl(270, 10%, 26%);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input, button {
+    /* reset appeareance*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* box */
+    width: 100%;
+
+    padding: 16px 0;
+
+    border: none;
+    border-bottom: 2px solid #FF7978;
+
+
+    /* text */
+    font-size: 1em;
+}
+
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    color: white;
+    background: hsl(154, 78%, 51%);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+button:hover {
+    background: hsl(154, 64%, 42%);
+}
+
+.footer {
+    font-size: 0.7rem;
+}
+
+.footer-span {
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 700;
+}
+
+span.error {
+    display: flex;
+
+    padding: 0;
+
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 945px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
